@@ -44,7 +44,7 @@ function App() {
           <input type='text'
             onChange={(e) => setTodo(e.target.value)}
             value={todo} />
-          <button type='submit'>{editId? "Edit" : "Go" }</button>
+          <button className='formButton' type='submit'>{editId? "Edit" : "Go" }</button>
         </form>
 
         <ul className='allTodos'>

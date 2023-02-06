@@ -26,7 +26,7 @@
 }
 
 input{
-  width: 80%;
+  width: 70%;
   padding: 10px;
   border-radius: 20px;
   border: none;
@@ -58,4 +58,44 @@ button{
 
 .todoText{
   flex: 1;
+}
+
+
+.formButton{
+  width: 70px;
+  display: inline-block;
+  color: #fff;
+  border: none;
+  border-radius: 30em;
+  padding: 10px;
+  margin: 0 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  box-shadow: 1px 1px 12px #000000;
+}
+
+.formButton::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateX(-101%);
+  transition: all .3s ease;
+  z-index: -1;
+}
+
+.formButton:hover {
+  color: #272727;
+  transition: all .3s ease;
+}
+
+.formButton:hover::before {
+  transform: translateX(0);
 }
